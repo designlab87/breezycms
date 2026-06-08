@@ -1,0 +1,109 @@
+{
+    "layout": [
+        {
+            "id": "hero01",
+            "type": "hero",
+            "background": {
+                "kind": "none",
+                "media_id": null
+            },
+            "overlay": "none",
+            "height": "large",
+            "align": "center",
+            "cols": [
+                [
+                    {
+                        "type": "richtext",
+                        "value": "<h1 class=\"ql-align-center\">Welcome to Breezy CMS</h1><p class=\"ql-align-center\">A lightweight, database-free CMS with a drag-and-drop page builder. Edit this page from the admin panel to make it your own.</p>"
+                    },
+                    {
+                        "type": "button",
+                        "value": {
+                            "text": "Go to the admin panel",
+                            "url": "/admin/login",
+                            "variant": "primary",
+                            "size": "large",
+                            "align": "center",
+                            "full_width": false
+                        }
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "intro1",
+            "type": "container",
+            "columns": 1,
+            "layout": "equal",
+            "background_color": null,
+            "background_image": null,
+            "background_fit": "cover",
+            "cols": [
+                [
+                    {
+                        "type": "richtext",
+                        "value": "<h2 class=\"ql-align-center\">Build pages your way</h2><p class=\"ql-align-center\">Drop in hero sections, multi-column containers, rich text, images, video, files, and buttons. Set site-wide colors, fonts, and corners under Theme.</p>"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "feat01",
+            "type": "container",
+            "columns": 3,
+            "layout": "equal",
+            "background_color": null,
+            "background_image": null,
+            "background_fit": "cover",
+            "cols": [
+                [
+                    {
+                        "type": "richtext",
+                        "value": "<h3 class=\"ql-align-center\">Drag &amp; drop builder</h3><p class=\"ql-align-center\">Compose pages from containers and widgets without touching code.</p>"
+                    }
+                ],
+                [
+                    {
+                        "type": "richtext",
+                        "value": "<h3 class=\"ql-align-center\">Theme it</h3><p class=\"ql-align-center\">Pick colors, self-hosted fonts, and corner styles that apply across the site.</p>"
+                    }
+                ],
+                [
+                    {
+                        "type": "richtext",
+                        "value": "<h3 class=\"ql-align-center\">No database</h3><p class=\"ql-align-center\">Everything is stored as plain JSON files on disk—easy to back up and move.</p>"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "cta001",
+            "type": "container",
+            "columns": 1,
+            "layout": "equal",
+            "background_color": null,
+            "background_image": null,
+            "background_fit": "cover",
+            "cols": [
+                [
+                    {
+                        "type": "richtext",
+                        "value": "<h2 class=\"ql-align-center\">Ready to start?</h2><p class=\"ql-align-center\">Log in, open the home page editor, and replace this content with your own.</p>"
+                    },
+                    {
+                        "type": "button",
+                        "value": {
+                            "text": "Edit this page",
+                            "url": "/admin/home/edit",
+                            "variant": "primary",
+                            "size": "normal",
+                            "align": "center",
+                            "full_width": false
+                        }
+                    }
+                ]
+            ]
+        }
+    ],
+    "updated_at": "2026-06-08T00:00:00+00:00"
+}

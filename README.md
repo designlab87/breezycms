@@ -41,11 +41,9 @@ Then visit:
 
 ### First-time setup
 
-1. Copy `storage/content/users.example.json` to `storage/content/users.json` if
-   it does not exist yet.
-2. Log in with the email in that file and password `admin123` (change it
-   immediately under **Admin → Settings**).
-3. For local dev without Turnstile network calls, set `TURNSTILE_ENABLED=0` in
+1. Log in at `/admin/login` with `admin@example.com` and password `admin123`,
+   then change it immediately under **Admin → Settings**.
+2. For local dev without Turnstile network calls, set `TURNSTILE_ENABLED=0` in
    your environment or `'enabled' => false` in `config/config.php` under
    `turnstile`.
 
@@ -77,9 +75,11 @@ is tracked per slug in the PHP session (30-minute idle timeout).
 ## Storage & backup
 
 All content is plain files. To back up or move the site, copy `storage/`.
-Uploaded binaries under `storage/uploads/` are git-ignored by default; JSON
-content can be versioned if you choose (keep `users.json` out of public repos —
-it contains password hashes).
+The repo ships generic starter files (`users.json`, `settings.json`, `home.json`)
+so the site runs on first download; your own content and uploads stay out of the
+repo via `.gitignore`. The starter `users.json` holds the default `admin123`
+hash — change the password after first login, and don't commit real password
+hashes back to a public repo.
 
 Writes use atomic temp-file + `flock` + `rename`.
 

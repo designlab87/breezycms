@@ -1,0 +1,16 @@
+{
+    "site_title": "My Site",
+    "theme": {
+        "color_primary": "#2563eb",
+        "color_accent": "#10b981",
+        "color_base": "#f7f8fa",
+        "font_h1": "system",
+        "font_h2": "system",
+        "font_body": "system",
+        "size_h1": "",
+        "size_h2": "",
+        "size_h3": "",
+        "size_body": "",
+        "corners": "rounded"
+    }
+}

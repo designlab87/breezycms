@@ -1,0 +1,8 @@
+[
+    {
+        "email": "admin@example.com",
+        "name": "Administrator",
+        "password_hash": "$2y$12$PJVqpPjLiRMNLb5iXo2t3.W.H5JEidZgG7QmrpbqNr8GXFm5M9Eza",
+        "created_at": "2026-06-05T00:00:00+00:00"
+    }
+]

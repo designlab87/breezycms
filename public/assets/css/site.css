@@ -40,6 +40,11 @@ body.site {
     background: var(--bg);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    /* Sticky footer: fill the viewport so the footer drops to the bottom
+       on short pages while still flowing normally on long ones. */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -73,7 +78,7 @@ a { color: var(--brand); }
 .nav-toggle span { width: 24px; height: 2px; background: var(--on-base); border-radius: 2px; }
 
 /* Main */
-.site-main { min-height: 60vh; }
+.site-main { flex: 1 0 auto; }
 
 /* Pages — vertical-only padding so .container side padding (mobile gutters) survives. */
 .page { padding-top: 3rem; padding-bottom: 3rem; }
@@ -189,9 +194,9 @@ a { color: var(--brand); }
 .hero__bg img, .hero__bg video { width: 100%; height: 100%; object-fit: cover; display: block; }
 .hero--overlay-dark::after, .hero--overlay-light::after { content: ""; position: absolute; inset: 0; z-index: 1; }
 .hero--overlay-dark::after { background: rgba(17, 24, 39, .5); }
-.hero--overlay-light::after { background: rgba(255, 255, 255, .4); }
+.hero--overlay-light::after { background: rgba(255, 255, 255, .3); }
 .hero__content { position: relative; z-index: 2; width: 100%; padding-top: 2rem; padding-bottom: 2rem; }
-.hero__inner { max-width: 720px; }
+.hero__inner { max-width: 1000px; }
 .hero__inner > .block { margin-bottom: 1rem; }
 .hero__inner > .block:last-child { margin-bottom: 0; }
 .hero--align-left   .hero__inner { text-align: left;   margin-right: auto; }

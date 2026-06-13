@@ -50,15 +50,8 @@
         [{ align: [] }],
         [{ list: 'ordered' }, { list: 'bullet' }],
         ['link', 'blockquote'],
-        ['table'],
         ['clean']
     ];
-
-    // Table actions exposed via the toolbar. Quill's built-in table module ships
-    // the data model + key bindings but no UI, so we drive it from these buttons.
-    // The "table" handler inserts a grid; the rest operate on the current cell.
-    var TABLE_ROWS = 3;
-    var TABLE_COLS = 3;
 
     // Normalize a typed hex value to #rgb/#rrggbb, or null if invalid/empty.
     function normalizeHex(value) {
